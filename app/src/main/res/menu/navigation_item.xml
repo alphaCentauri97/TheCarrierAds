@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/person"/>
+    <item
+        android:id="@+id/resume"
+        android:icon="@drawable/resume"
+        android:title="My Resume"/>
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/notification"
+        android:title="Notification"/>
+    <item
+        android:id="@+id/wishlist"
+        android:icon="@drawable/wishlist"
+        android:title="Wishlist"/>
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/help"
+        android:title="Help"/>
+
+    <item
+        android:id="@+id/terms_and_services"
+        android:icon="@drawable/terms_and_services"
+        android:title="Terms and Services"/>
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/log_out"
+        android:title="Logout"/>
+
+</menu>

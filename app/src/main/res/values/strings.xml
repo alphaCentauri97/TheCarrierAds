@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hiring Me Aara Tech</string>
+    <string-array name="spinner_item">
+        <item>Designer</item>
+        <item>Designer</item>
+        <item>Designer</item>
+        <item>Designer</item>
+    </string-array>
+    <array name="slider_values">
+        <item>20.0</item>
+        <item>70.0</item>
+    </array>
+</resources>

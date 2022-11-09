@@ -17,18 +17,18 @@ public class FilterActivity extends AppCompatActivity {
         binding = ActivityFilterBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.applyButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(FilterActivity.this,CompanyProfilePage.class);
-                startActivity(intent);
-            }
-        });
+
         binding.btFullTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FilterActivity.this,MainActivity.class);
+                Intent intent = new Intent(FilterActivity.this,ChatUiActivity.class);
                 startActivity(intent);
+            }
+        });
+        binding.leftArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

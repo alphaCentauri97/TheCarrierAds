@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jobtypeLlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/button_bg"
+    android:backgroundTint="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvJobType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="5dp"
+        android:drawablePadding="3dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingVertical="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Profile"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingRight="8dp"
+        android:src="@drawable/cross_in_circle"
+        android:visibility="gone" />
+
+</LinearLayout>

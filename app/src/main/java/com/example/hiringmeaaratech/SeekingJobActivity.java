@@ -1,5 +1,7 @@
 package com.example.hiringmeaaratech;
 
+import static androidx.fragment.app.DialogFragment.STYLE_NORMAL;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -7,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.hiringmeaaratech.Fragments.ActionBottomDialogFragment;
 import com.example.hiringmeaaratech.databinding.ActivitySeekingJobBinding;
 
 public class SeekingJobActivity extends AppCompatActivity {
@@ -20,10 +23,13 @@ public class SeekingJobActivity extends AppCompatActivity {
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SeekingJobActivity.this,FilterActivity.class);
-                startActivity(intent);
+                ActionBottomDialogFragment fragment = new ActionBottomDialogFragment();
+                fragment.show(getSupportFragmentManager(), "TAG");
+                fragment.setStyle(STYLE_NORMAL,R.style.BottomSheetTheme);
             }
         });
+
+
 
     }
 }

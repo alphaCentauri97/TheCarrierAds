@@ -7,8 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background_color">#E3EFF1</color>
+    <color name="background_color">#F0F5FC</color>
     <color name="btn_bg">#59457C</color>
-    <color name="drawable_bg">#CBEEF4</color>
+    <color name="drawable_bg">#DEEAFB</color>
     <color name="light_grey">#EBF2FD</color>
+    <color name="job_type_color">#3F51B5</color>
+    <color name="grey_color">#AEAFB1</color>
 </resources>

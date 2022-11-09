@@ -12,17 +12,33 @@ import com.example.hiringmeaaratech.databinding.ActivityFilterBinding;
 public class CompanyProfilePage extends AppCompatActivity {
 
     ActivityCompanyProfilePageBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityCompanyProfilePageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.applyButton.setOnClickListener(new View.OnClickListener() {
+
+
+        binding.leftArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CompanyProfilePage.this,ProfileActivity.class);
-                startActivity(intent);
+                finish();
             }
-        });    }
+        });
+
+
+        String company = getIntent().getStringExtra("companyName");
+        String location = getIntent().getStringExtra("location");
+        String jobtype = getIntent().getStringExtra("jobType");
+        String salary = getIntent().getStringExtra("salary");
+
+        binding.tvCompanyName.setText(company);
+        binding.tvlocation.setText(location);
+        binding.tvJobType.setText(jobtype);
+        binding.tvSalary.setText(salary);
+
+
+    }
 }

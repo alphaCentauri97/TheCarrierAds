@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Hiring Me Aara Tech</string>
+    <string name="navigation_open">Navigation Drawer is open</string>
+    <string name="navigation_close">Navigation Drawer is close</string>
+
     <string-array name="spinner_item">
         <item>Designer</item>
         <item>Designer</item>
@@ -10,4 +13,6 @@
         <item>20.0</item>
         <item>70.0</item>
     </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

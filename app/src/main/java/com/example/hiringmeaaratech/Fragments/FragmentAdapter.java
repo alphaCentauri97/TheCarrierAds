@@ -18,10 +18,10 @@ public class FragmentAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position){
 
-            case 0: return new SignUpFragments();
-            case 1: return new SigInFragments();
+            case 0: return new SignInFragments();
+            case 1: return new SignUpFragments();
 
-            default:return new SignUpFragments();
+            default:return new SignInFragments();
         }
     }
 

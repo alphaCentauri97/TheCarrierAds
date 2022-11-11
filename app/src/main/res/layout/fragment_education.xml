@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.EditProfileFragment.EducationFragment">
+
+
+    <TextView
+        android:id="@+id/tveducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:text="Add Education"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/gradient_color"
+        android:paddingHorizontal="10dp"
+        android:textSize="13sp"
+        android:paddingVertical="3dp"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/add_15"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView_education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"/>
+
+    <TextView
+        android:id="@+id/tvCertification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:text="Add Certification"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/gradient_color"
+        android:paddingHorizontal="10dp"
+        android:textSize="13sp"
+        android:paddingVertical="3dp"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/add_15" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView_certification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"/>
+</LinearLayout>

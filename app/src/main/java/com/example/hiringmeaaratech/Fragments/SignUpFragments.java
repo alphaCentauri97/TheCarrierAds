@@ -27,13 +27,6 @@ public class SignUpFragments extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentSignUpFragmentsBinding.inflate(inflater, container, false);
-        binding.btnGoogle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getContext(), MainActivity.class);
-                startActivity(intent);
-            }
-        });
         return  binding.getRoot();
     }
 }

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Fragments.SignInFragments">
+
+    <EditText
+        android:id="@+id/etEmailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/spinner_bg"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="41dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/spinner_bg"
+        android:minHeight="41dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/toggle_password"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/password_show" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/gradient_color"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:text="Or"
+        android:layout_marginVertical="15dp"
+        android:textSize="20sp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:layout_marginBottom="20dp"
+       android:orientation="horizontal">
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fbGoogle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:backgroundTint="@color/white"
+           android:clickable="true"
+           android:layout_marginRight="8dp"
+           android:src="@drawable/icons8_google" />
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fbLinkedIn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:backgroundTint="@color/white"
+           android:clickable="true"
+           android:layout_marginLeft="8dp"
+           android:src="@drawable/linkedin" />
+   </LinearLayout>
+
+
+</LinearLayout>

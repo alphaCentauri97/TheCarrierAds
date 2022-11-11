@@ -197,7 +197,7 @@
                 android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/spinner_bg"
-                android:backgroundTint="#7C85B6"
+                android:backgroundTint="#2B77AE"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Full-Time"
                 android:textColor="@color/white"
@@ -210,7 +210,7 @@
                 android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/spinner_bg"
-                android:backgroundTint="#7C85B6"
+                android:backgroundTint="#2B77AE"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Part-Time"
                 android:textColor="@color/white"
@@ -223,7 +223,7 @@
                 android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/spinner_bg"
-                android:backgroundTint="#7C85B6"
+                android:backgroundTint="#2B77AE"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Remote"
                 android:textColor="@color/white"
@@ -235,19 +235,18 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/applyButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/button_bg"
-        android:backgroundTint="#8D60CD"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Apply"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        <Button
+            android:id="@+id/applyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/gradient_color"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </ScrollView>

@@ -2,17 +2,62 @@
     <string name="app_name">Hiring Me Aara Tech</string>
     <string name="navigation_open">Navigation Drawer is open</string>
     <string name="navigation_close">Navigation Drawer is close</string>
+    <string name="rupees_Symbol">\u20B9</string>
 
-    <string-array name="spinner_item">
-        <item>Designer</item>
-        <item>Designer</item>
-        <item>Designer</item>
-        <item>Designer</item>
+    <string-array name="spinner_country">
+        <item>Select Country</item>
+        <item>India</item>
+        <item>America</item>
+        <item>New Zealand</item>
+        <item>Pakistan</item>
+        <item>Nepal</item>
+        <item>Bhutan</item>
+        <item>Sri lanka</item>
+        <item>Bangladesh</item>
+        <item>Russia</item>
     </string-array>
+
+
+    <string-array name="spinner_state">
+        <item>Select State</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Gujrat</item>
+        <item>Madhya Pradesh</item>
+        <item>Rajasthan</item>
+        <item>Tamil Nadu</item>
+        <item>Kerala</item>
+        <item>Uttarakhand</item>
+        <item>Uttar Pradesh</item>
+    </string-array>
+
+
+    <string-array name="spinner_city">
+        <item>Select city</item>
+        <item>New Delhi</item>
+        <item>Noida</item>
+        <item>Gaziabad</item>
+        <item>Varanasi</item>
+        <item>Surat</item>
+        <item>Mumbai</item>
+    </string-array>
+
+
+    <string-array name="spinner_language">
+        <item>Please Select</item>
+        <item>Beginner</item>
+        <item>Elementory</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+        <item>Proficient</item>
+    </string-array>
+
+
     <array name="slider_values">
         <item>20.0</item>
         <item>70.0</item>
     </array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="subject">Subject</string>
 </resources>

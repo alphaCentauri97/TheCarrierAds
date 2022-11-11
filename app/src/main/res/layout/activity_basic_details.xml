@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BasicDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Basic Details"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="end"
+            android:paddingRight="10dp"
+            android:text="15 %"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="Add some basic detail about yourself to help recruiters know you"
+                android:textColor="@color/job_type_color" />
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/spinner_bg"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Name *"
+                android:inputType="textPersonName"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/spinner_bg"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Mobile number *"
+                android:inputType="phone"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/spinner_bg"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Alternate Mobile No."
+                android:inputType="phone"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/spinner_bg"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Email *"
+                android:inputType="textEmailAddress"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etAlternateEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/spinner_bg"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Alternate Email Id"
+                android:inputType="textEmailAddress"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/job_type_color"
+                android:text="Gender *"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Male"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Female"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Other"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/job_type_color"
+                android:text="Date of Birth *"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/spinner_bg"
+                android:minHeight="39dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/tvPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="DD/YY/MM"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/toggle_password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/calendar_month_24" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/job_type_color"
+                android:text="Maritial Status"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner_maritial_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="39dp"
+                android:elevation="10dp"
+                style="@style/customfontstyle"
+                android:background="@drawable/spinner_background"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="7dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/job_type_color"
+                android:text="Religion"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner_religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="39dp"
+                android:elevation="10dp"
+                style="@style/customfontstyle"
+                android:background="@drawable/spinner_background"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="7dp"
+                />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/spinner_bg"
+                android:drawableRight="@drawable/file_upload_24"
+                android:fontFamily="@font/poppins"
+                android:gravity="left|center"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="Upload Resume *"
+                android:textAppearance="@style/customfontstyle" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="5dp"
+                android:textSize="9sp"
+                android:text="Max Size 100 KB" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/job_type_color"
+                android:text="Current Address *"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/spinner_bg"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Address *"
+                android:inputType="textPostalAddress"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etPinCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/spinner_bg"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Pin Code"
+                android:inputType="number"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <Spinner
+                android:layout_marginTop="28dp"
+                android:id="@+id/spinner_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="39dp"
+                android:elevation="10dp"
+                style="@style/customfontstyle"
+                android:background="@drawable/spinner_background"
+                android:layout_marginHorizontal="28dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="39dp"
+                android:elevation="10dp"
+                style="@style/customfontstyle"
+                android:background="@drawable/spinner_background"
+                android:layout_marginVertical="22dp"
+                android:layout_marginHorizontal="28dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="39dp"
+                android:elevation="10dp"
+                style="@style/customfontstyle"
+                android:layout_marginHorizontal="28dp"
+                android:background="@drawable/spinner_background"
+
+                />
+            <Button
+                android:id="@+id/btUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/gradient_color"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSummaryActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Profile Summary"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="end"
+                android:paddingRight="10dp"
+                android:text="15 %"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp"
+            android:fontFamily="@font/poppins"
+            android:text="Your personal details will make you profile richer"
+            android:textColor="@color/job_type_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/poppins"
+            android:text="Prefered Job Location *"
+            android:textColor="@color/job_type_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etFirstCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner_bg"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="First City"
+            android:inputType="text"
+            android:minHeight="39dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/etSecondCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_bg"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Second City City"
+            android:inputType="text"
+            android:minHeight="39dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/poppins"
+            android:text="Profile Summary"
+            android:textColor="@color/job_type_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etProfileSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner_bg"
+            android:gravity="top"
+            android:hint="Profile Summary..."
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:overScrollMode="always"
+            android:paddingTop="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnAddSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/gradient_color"
+            android:drawableRight="@drawable/drop_down"
+            android:fontFamily="@font/poppins"
+            android:minHeight="40dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:text="Add Languages"
+            android:textAppearance="@style/customfontstyle"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/drawable_bg"
+        android:elevation="15dp"
+        android:fontFamily="@font/poppins"
+        android:minHeight="37dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.879" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

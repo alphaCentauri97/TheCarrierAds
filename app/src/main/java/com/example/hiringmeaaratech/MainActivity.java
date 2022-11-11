@@ -18,6 +18,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -38,6 +39,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
-
 
 
         binding.toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -63,13 +64,29 @@ public class MainActivity extends AppCompatActivity {
 
                 int id = item.getItemId();
                 binding.drawer.closeDrawer(GravityCompat.START);
+                switch (id) {
 
+                    case R.id.writeToUse:
+                        intent = new Intent(MainActivity.this, WriteUsActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.about_us:
+                        intent = new Intent(MainActivity.this, AboutUs.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.wallet:
+                        intent = new Intent(MainActivity.this, WalletActivity.class);
+                        startActivity(intent);
+                        break;
+
+                }
                 return true;
             }
         });
 
-        FragmentTransaction homeTransaction  = getSupportFragmentManager().beginTransaction();
-        homeTransaction.replace(R.id.content,new SearchFragment());
+
+        FragmentTransaction homeTransaction = getSupportFragmentManager().beginTransaction();
+        homeTransaction.replace(R.id.content, new SearchFragment());
         homeTransaction.commit();
 
 
@@ -82,20 +99,22 @@ public class MainActivity extends AppCompatActivity {
 
 
                     case R.id.search:
-                        FragmentTransaction homeTransaction  = getSupportFragmentManager().beginTransaction();
-                        homeTransaction.replace(R.id.content,new SearchFragment());
+                        FragmentTransaction homeTransaction = getSupportFragmentManager().beginTransaction();
+                        homeTransaction.replace(R.id.content, new SearchFragment());
                         homeTransaction.commit();
                         break;
                     case R.id.dashboard:
-                        FragmentTransaction picTransaction  = getSupportFragmentManager().beginTransaction();
-                        picTransaction.replace(R.id.content,new DashBoardFragment());
+                        FragmentTransaction picTransaction = getSupportFragmentManager().beginTransaction();
+                        picTransaction.replace(R.id.content, new DashBoardFragment());
                         picTransaction.commit();
                         break;
                     case R.id.user:
-                        FragmentTransaction camTransaction  = getSupportFragmentManager().beginTransaction();
-                        camTransaction.replace(R.id.content,new UserDetailFragment());
+                        FragmentTransaction camTransaction = getSupportFragmentManager().beginTransaction();
+                        camTransaction.replace(R.id.content, new UserDetailFragment());
                         camTransaction.commit();
                         break;
+
+
 
 
                 }
@@ -108,15 +127,21 @@ public class MainActivity extends AppCompatActivity {
         binding.profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });
 
-
+        View headerView = binding.navigationView.getHeaderView(0);
+        headerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,EditProfileActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
-//
 
 
 

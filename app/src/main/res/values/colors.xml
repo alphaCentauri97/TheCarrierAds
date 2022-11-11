@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -11,6 +11,11 @@
     <color name="btn_bg">#59457C</color>
     <color name="drawable_bg">#DEEAFB</color>
     <color name="light_grey">#EBF2FD</color>
-    <color name="job_type_color">#3F51B5</color>
+    <color name="job_type_color">#2B77AE</color>
     <color name="grey_color">#AEAFB1</color>
+
+    <color name="grad"
+        android:angle="180"
+        android:endColor="#2B77AE"
+        android:startColor="#264785"/>
 </resources>

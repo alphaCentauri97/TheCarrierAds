@@ -24,15 +24,28 @@
         android:id="@+id/help"
         android:icon="@drawable/help"
         android:title="Help"/>
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/wallet"
+        android:title="Wallet"/>
 
     <item
         android:id="@+id/terms_and_services"
         android:icon="@drawable/terms_and_services"
         android:title="Terms and Services"/>
     <item
+        android:id="@+id/writeToUse"
+        android:icon="@drawable/terms_and_services"
+        android:title="Write To Use"/>
+    <item
         android:id="@+id/settings"
         android:icon="@drawable/settings"
         android:title="Settings"/>
+
+    <item
+        android:id="@+id/about_us"
+        android:icon="@drawable/settings"
+        android:title="About Us"/>
     <item
         android:id="@+id/logout"
         android:icon="@drawable/log_out"

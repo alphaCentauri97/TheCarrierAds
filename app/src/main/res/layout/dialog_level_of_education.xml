@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="15dp"
+    android:background="@android:color/transparent"
+    android:backgroundTint="@color/background_color"
+    android:elevation="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="Highest Qualification"
+        android:textColor="@color/job_type_color"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinner_highest_qualification"
+        style="@style/customfontstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/spinner_background"
+        android:elevation="10dp"
+        android:minHeight="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="Institution"
+        android:textColor="@color/job_type_color"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etInstitution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner_bg"
+        android:ems="10"
+        android:elevation="18dp"
+        android:fontFamily="@font/poppins"
+        android:hint="School/College/University"
+        android:inputType="text"
+        android:minHeight="39dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="Specialization"
+        android:textColor="@color/job_type_color"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etSpecialization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner_bg"
+        android:ems="10"
+        android:elevation="18dp"
+        android:fontFamily="@font/poppins"
+        android:hint="School/College/University"
+        android:inputType="text"
+        android:minHeight="39dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="Passing Year"
+        android:textColor="@color/job_type_color"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinner_passing_year"
+        style="@style/customfontstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/spinner_background"
+        android:elevation="10dp"
+        android:minHeight="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="Education Type"
+        android:textColor="@color/job_type_color"
+        android:textSize="16sp" />
+
+    <RadioButton
+        android:id="@+id/rdFullTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins"
+        android:text="Full Time" />
+
+    <RadioButton
+        android:id="@+id/rdPartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins"
+        android:text="Part Time" />
+
+    <RadioButton
+        android:id="@+id/rdCorrespondense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins"
+        android:text="Correspondence" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/gradient_color"
+        android:elevation="15dp"
+        android:fontFamily="@font/poppins"
+        android:minHeight="37dp"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+</LinearLayout>

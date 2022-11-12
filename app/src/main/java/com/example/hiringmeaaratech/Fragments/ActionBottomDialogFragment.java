@@ -35,7 +35,7 @@ public class ActionBottomDialogFragment extends BottomSheetDialogFragment {
         viewPager.setAdapter(new FragmentAdapter(getActivity()));
         new TabLayoutMediator(tabLayout, viewPager, ((tab, position) -> tab.setText(titles[position]))).attach();
 
-        //setStyle(STYLE_NO_FRAME, R.style.BottomSheetTheme);
+        setStyle(STYLE_NO_FRAME, R.style.BottomSheetTheme);
 
         return view;
     }

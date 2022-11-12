@@ -72,6 +72,6 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="17dp"
         android:layout_marginTop="6dp"
-        android:layout_marginBottom="11dp"/>
+        android:layout_marginBottom="2dp"/>
 
 </LinearLayout>

@@ -63,7 +63,8 @@
             app:cardCornerRadius="360dp"
             app:cardElevation="5dp">
 
-            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profile_image"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
@@ -127,11 +128,11 @@
 
                 <ImageView
                     android:id="@+id/imgPersonalEdit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="20dp"
-                    android:src="@drawable/create_logo" />
+                    android:src="@drawable/pencil" />
             </LinearLayout>
         </LinearLayout>
 
@@ -189,7 +190,7 @@
             android:id="@+id/tabItem3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:icon="@drawable/terms_and_services"
+            android:icon="@drawable/terms_and_condition"
             android:text="Experience" />
 
     </com.google.android.material.tabs.TabLayout>

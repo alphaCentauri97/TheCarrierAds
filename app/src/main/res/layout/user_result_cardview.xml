@@ -26,8 +26,8 @@
               android:layout_width="48dp"
               android:layout_height="48dp"
               android:layout_weight="1"
-              android:layout_marginTop="20dp"
-              app:srcCompat="@drawable/company_logo" />
+              android:layout_gravity="center"
+              app:srcCompat="@drawable/company_logo_small" />
 
           <LinearLayout
               android:layout_width="wrap_content"
@@ -80,10 +80,10 @@
               android:id="@+id/heart"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:layout_weight="1"
+              android:layout_marginHorizontal="4dp"
               android:layout_marginTop="14dp"
-              app:srcCompat="@drawable/wishlist"
-              android:layout_marginHorizontal="4dp"/>
+              android:layout_weight="1"
+              app:srcCompat="@drawable/heart" />
 
       </LinearLayout>
         <TextView
@@ -92,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginVertical="10dp"
-            android:drawableLeft="@drawable/log_out"
+            android:drawableLeft="@drawable/job_type_icon"
             android:drawablePadding="5dp"
             android:fontFamily="@font/poppins"
             android:textColor="@color/black"
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginVertical="10dp"
-                android:drawableLeft="@drawable/time"
+                android:drawableLeft="@drawable/clock_icon"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:paddingHorizontal="5dp"

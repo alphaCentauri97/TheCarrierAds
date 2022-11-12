@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.hiringmeaaratech.Fragments.WalletAdapter;
 import com.example.hiringmeaaratech.Models.WalletModel;
@@ -34,5 +35,13 @@ public class WalletActivity extends AppCompatActivity {
                 "\u20B9 "+"110","Date: 12/11/2022"));
         walletAdapter = new WalletAdapter(this,walletList);
         binding.recyclerViewWallet.setAdapter(walletAdapter);
+
+        binding.backArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
     }
 }

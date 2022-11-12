@@ -23,10 +23,19 @@
 
         <item name="android:textAlignment">textStart</item>
     </style>
+
+
     <style name="MyMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Add attributes here -->
         <item name="colorPrimary">@color/purple_500</item>
     </style>
+
+    <style name="SliderColor" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Add attributes here -->
+        <item name="colorPrimary">@color/job_type_color</item>
+    </style>
+
+
     <style name="customfontstyle" parent="@android:style/TextAppearance.Small">
         <item name="android:fontFamily">@font/poppins_semibold</item>
         <item name="android:textSize">17sp</item>

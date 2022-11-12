@@ -36,73 +36,70 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
         android:orientation="vertical">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputEmail"
+        <EditText
+            android:id="@+id/etSubject"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/subject"
-            android:layout_marginEnd="16dp">
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:minHeight="48dp"
-                android:paddingLeft="10dp"
-                android:inputType="textEmailAddress"
-                android:textAlignment="viewStart"
-                tools:ignore="TouchTargetSizeCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputDescription"
+            android:layout_marginHorizontal="26dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/spinner_bg"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Subject"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/etProfileSummary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="200dp"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="26dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/spinner_bg"
+            android:gravity="top"
             android:hint="Description"
-            android:layout_marginEnd="16dp"
-           >
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:overScrollMode="always"
+            android:paddingTop="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etDesc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:gravity="top"
-                android:inputType="textMultiLine"
-                android:lines="5"
-                android:overScrollMode="always"
-                android:paddingLeft="10dp"
-                android:scrollbarStyle="insideInset"
-                android:scrollbars="vertical"
-                android:scrollHorizontally="false"
-                tools:ignore="TouchTargetSizeCheck"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
 
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="50dp"
-            android:layout_marginTop="388dp"
-            android:fontFamily="@font/poppins_semibold"
             android:background="@drawable/gradient_color"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Submit"
             android:textColor="@color/white"
-            android:text="Submit" />
-
-
-    </LinearLayout>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.717"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.907" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

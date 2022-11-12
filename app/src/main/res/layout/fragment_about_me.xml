@@ -15,7 +15,7 @@
         android:layout_marginTop="50dp"
         android:elevation="18dp"
         android:minHeight="60dp"
-        app:cardCornerRadius="8dp">
+        >
 
         <Button
             android:id="@+id/btnPersonalDetail"
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="22dp"
         android:elevation="18dp"
         android:minHeight="60dp"
         app:cardCornerRadius="8dp">
@@ -61,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="22dp"
         android:elevation="18dp"
         android:minHeight="60dp"
         app:cardCornerRadius="8dp">
@@ -85,7 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="22dp"
         android:elevation="18dp"
         android:minHeight="60dp"
         app:cardCornerRadius="8dp">
@@ -111,7 +111,7 @@
         android:layout_marginHorizontal="5dp"
         android:elevation="18dp"
         android:minHeight="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="22dp"
         app:cardCornerRadius="8dp">
 
         <Button

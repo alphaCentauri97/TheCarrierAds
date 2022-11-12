@@ -31,11 +31,11 @@
 
     <item
         android:id="@+id/terms_and_services"
-        android:icon="@drawable/terms_and_services"
+        android:icon="@drawable/terms_and_condition"
         android:title="Terms and Services"/>
     <item
         android:id="@+id/writeToUse"
-        android:icon="@drawable/terms_and_services"
+        android:icon="@drawable/terms_and_condition"
         android:title="Write To Use"/>
     <item
         android:id="@+id/settings"
@@ -48,7 +48,9 @@
         android:title="About Us"/>
     <item
         android:id="@+id/logout"
-        android:icon="@drawable/log_out"
+        android:icon="@drawable/logout"
         android:title="Logout"/>
+
+
 
 </menu>

@@ -11,37 +11,38 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.hiringmeaaratech.CompanyProfilePage;
-import com.example.hiringmeaaratech.Models.ModelUserResult;
+import com.example.hiringmeaaratech.Models.ModelRecommendedJobs;
 import com.example.hiringmeaaratech.R;
-import com.example.hiringmeaaratech.databinding.UserResultCardviewBinding;
+import com.example.hiringmeaaratech.databinding.CardRecommendedJobsBinding;
 
 import java.util.List;
 
-public class UserResultAdapter extends RecyclerView.Adapter<UserResultAdapter.ViewHolder> {
+public class RecommendedJobsAdapter extends RecyclerView.Adapter<RecommendedJobsAdapter.ViewHolder> {
 
     Context context;
-    List<ModelUserResult> resultList;
+    List<ModelRecommendedJobs> resultList;
 
-    public UserResultAdapter(Context context, List<ModelUserResult> resultList) {
+    public RecommendedJobsAdapter(Context context, List<ModelRecommendedJobs> resultList) {
         this.context = context;
         this.resultList = resultList;
     }
 
     @NonNull
     @Override
-    public UserResultAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.user_result_cardview,parent,false);
+    public RecommendedJobsAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.card_recommended_jobs,parent,false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull UserResultAdapter.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
-        holder.binding.imageView4.setImageResource(resultList.get(position).getImg());
+    public void onBindViewHolder(@NonNull RecommendedJobsAdapter.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
+        holder.binding.imgCompanyLogo.setImageResource(resultList.get(position).getImgCompany());
         holder.binding.tvCompanyName.setText(resultList.get(position).getCompany_name());
         holder.binding.tvlocation.setText(resultList.get(position).getLocation());
+        holder.binding.tvTechnology.setText(resultList.get(position).getTechnology());
+        holder.binding.tvInformation.setText(resultList.get(position).getDescription());
         holder.binding.tvJobType.setText(resultList.get(position).getJobType());
-        holder.binding.tvExperience.setText("Eligibility: "+resultList.get(position).getExperience());
-        holder.binding.tvSalary.setText(resultList.get(position).getSalary());
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,9 +50,11 @@ public class UserResultAdapter extends RecyclerView.Adapter<UserResultAdapter.Vi
                 intent.putExtra("companyName",resultList.get(position).getCompany_name());
                 intent.putExtra("location",resultList.get(position).getLocation());
                 intent.putExtra("jobType",resultList.get(position).getJobType());
-                intent.putExtra("experience",resultList.get(position).getExperience());
-                intent.putExtra("salary",resultList.get(position).getSalary());
+                intent.putExtra("technology",resultList.get(position).getTechnology());
+                intent.putExtra("description",resultList.get(position).getDescription());
+                intent.putExtra("imgCompany",resultList.get(position).getImgCompany());
                 context.startActivity(intent);
+
             }
         });
     }
@@ -62,10 +65,10 @@ public class UserResultAdapter extends RecyclerView.Adapter<UserResultAdapter.Vi
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        UserResultCardviewBinding binding;
+        CardRecommendedJobsBinding binding;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            binding = UserResultCardviewBinding.bind(itemView);
+            binding = CardRecommendedJobsBinding.bind(itemView);
         }
     }
 }

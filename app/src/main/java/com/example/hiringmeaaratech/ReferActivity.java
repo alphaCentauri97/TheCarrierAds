@@ -2,29 +2,25 @@ package com.example.hiringmeaaratech;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.hiringmeaaratech.databinding.ActivityFilterBinding;
-import com.example.hiringmeaaratech.databinding.ActivityProfileBinding;
+import com.example.hiringmeaaratech.databinding.ActivityReferBinding;
 
-public class ProfileActivity extends AppCompatActivity {
+public class ReferActivity extends AppCompatActivity {
 
-    ActivityProfileBinding binding;
+    ActivityReferBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityProfileBinding.inflate(getLayoutInflater());
+        binding = ActivityReferBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         binding.backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
-
-
-
     }
 }

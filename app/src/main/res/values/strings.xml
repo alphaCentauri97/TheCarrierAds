@@ -17,6 +17,11 @@
         <item>Russia</item>
     </string-array>
 
+    <string-array name="spinner_typesOf_job">
+        <item>State Government</item>
+        <item>Central Government</item>
+    </string-array>
+
 
     <string-array name="spinner_state">
         <item>Select State</item>
@@ -60,4 +65,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="subject">Subject</string>
+    <string name="_2_00_0_top_companies_trust_nthe_career_ads"><b>2,00,0</b> + Top Companies Trust\n<b>THE Career ads</b></string>
+    <string name="i_want_to_hire">I Want <b>to hire</b></string>
+    <string name="i_want_a_job">I Want a <b>Job</b></string>
 </resources>

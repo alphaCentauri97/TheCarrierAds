@@ -1,18 +1,19 @@
 package com.example.hiringmeaaratech;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.hiringmeaaratech.databinding.ActivityAboutUsBinding;
+import com.example.hiringmeaaratech.databinding.ActivityNotificationBinding;
 
-public class AboutUs extends AppCompatActivity {
+public class NotificationActivity extends AppCompatActivity {
 
-    ActivityAboutUsBinding binding;
+    ActivityNotificationBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityAboutUsBinding.inflate(getLayoutInflater());
+        binding = ActivityNotificationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.backArrow.setOnClickListener(new View.OnClickListener() {

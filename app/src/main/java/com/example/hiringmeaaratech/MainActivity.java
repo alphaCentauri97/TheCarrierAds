@@ -18,23 +18,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
+import android.view.Window;
+import android.widget.SearchView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
-import com.example.hiringmeaaratech.Adapters.UserResultAdapter;
-import com.example.hiringmeaaratech.Fragments.ActionBottomDialogFragment;
-import com.example.hiringmeaaratech.Fragments.BottomNavigation.DashBoardFragment;
-import com.example.hiringmeaaratech.Fragments.BottomNavigation.SearchFragment;
-import com.example.hiringmeaaratech.Fragments.BottomNavigation.UserDetailFragment;
-import com.example.hiringmeaaratech.Models.ModelUserResult;
+import com.example.hiringmeaaratech.Fragments.HomeFragment;
 import com.example.hiringmeaaratech.databinding.ActivityMainBinding;
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
 
+        FragmentTransaction homeTransaction = getSupportFragmentManager().beginTransaction();
+        homeTransaction.replace(R.id.content, new HomeFragment());
+        homeTransaction.commit();
 
         binding.toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        binding.toolbar.inflateMenu(R.menu.toolbar_menu);
 
         binding.navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @SuppressLint("NonConstantResourceId")
@@ -66,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
                 binding.drawer.closeDrawer(GravityCompat.START);
                 switch (id) {
 
+                    case R.id.recommend_jobs:
+                        intent = new Intent(MainActivity.this, RecommendedJobsActivity.class);
+                        startActivity(intent);
+                        break;
                     case R.id.writeToUse:
                         intent = new Intent(MainActivity.this, WriteUsActivity.class);
                         startActivity(intent);
@@ -78,7 +77,29 @@ public class MainActivity extends AppCompatActivity {
                         intent = new Intent(MainActivity.this, WalletActivity.class);
                         startActivity(intent);
                         break;
+                    case R.id.notification:
+                        intent = new Intent(MainActivity.this, NotificationActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.refer:
+                        intent = new Intent(MainActivity.this, ReferActivity.class);
+                        startActivity(intent);
+                        break;
 
+
+
+                    case R.id.message:
+                        intent = new Intent(MainActivity.this, ChatUiActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.settings:
+                        intent = new Intent(MainActivity.this, SettingActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.wishlist:
+                        intent = new Intent(MainActivity.this, SavedJobsActivity.class);
+                        startActivity(intent);
+                        break;
 
                 }
                 return true;
@@ -86,52 +107,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        FragmentTransaction homeTransaction = getSupportFragmentManager().beginTransaction();
-        homeTransaction.replace(R.id.content, new SearchFragment());
-        homeTransaction.commit();
 
-
-        binding.bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-
-                switch (item.getItemId()) {
-
-
-                    case R.id.search:
-                        FragmentTransaction homeTransaction = getSupportFragmentManager().beginTransaction();
-                        homeTransaction.replace(R.id.content, new SearchFragment());
-                        homeTransaction.commit();
-                        break;
-                    case R.id.dashboard:
-                        FragmentTransaction picTransaction = getSupportFragmentManager().beginTransaction();
-                        picTransaction.replace(R.id.content, new DashBoardFragment());
-                        picTransaction.commit();
-                        break;
-                    case R.id.user:
-                        FragmentTransaction camTransaction = getSupportFragmentManager().beginTransaction();
-                        camTransaction.replace(R.id.content, new UserDetailFragment());
-                        camTransaction.commit();
-                        break;
-
-
-
-
-                }
-
-
-                return true;
-            }
-        });
-
-        binding.profileImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-                startActivity(intent);
-            }
-        });
 
         View headerView = binding.navigationView.getHeaderView(0);
         headerView.setOnClickListener(new View.OnClickListener() {
@@ -142,6 +118,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.toolbar_menu,menu);
+
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected (MenuItem item) {
+        int id = item.getItemId() ;
+        if (id == R.id.search) {
+            intent = new Intent(MainActivity.this, SearchActivity.class);
+            startActivity(intent);        }
+        if (id == R.id.notification) {
+            intent = new Intent(MainActivity.this, NotificationActivity.class);
+            startActivity(intent);
+        }
+        return super .onOptionsItemSelected(item) ;
     }
 
 

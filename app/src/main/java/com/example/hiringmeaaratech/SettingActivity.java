@@ -1,18 +1,20 @@
 package com.example.hiringmeaaratech;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.hiringmeaaratech.databinding.ActivityAboutUsBinding;
+import com.example.hiringmeaaratech.databinding.ActivitySettingBinding;
 
-public class AboutUs extends AppCompatActivity {
+public class SettingActivity extends AppCompatActivity {
 
-    ActivityAboutUsBinding binding;
+    ActivitySettingBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityAboutUsBinding.inflate(getLayoutInflater());
+        binding = ActivitySettingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.backArrow.setOnClickListener(new View.OnClickListener() {

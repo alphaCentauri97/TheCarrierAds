@@ -12,9 +12,7 @@ import android.view.ViewGroup;
 import com.example.hiringmeaaratech.LanguageActivity;
 import com.example.hiringmeaaratech.PersonalDetailActivity;
 import com.example.hiringmeaaratech.PersonalProjectActivity;
-import com.example.hiringmeaaratech.ProfileActivity;
 import com.example.hiringmeaaratech.ProfileSummaryActivity;
-import com.example.hiringmeaaratech.R;
 import com.example.hiringmeaaratech.SkillActivity;
 import com.example.hiringmeaaratech.databinding.FragmentAboutMeBinding;
 

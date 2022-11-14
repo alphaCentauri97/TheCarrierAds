@@ -4,47 +4,51 @@
     tools:showIn = "navigation_view">
 
     <item
-        android:id="@+id/profile"
-        android:title="Profile"
-        android:icon="@drawable/person"/>
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home_icon"/>
+
     <item
-        android:id="@+id/resume"
-        android:icon="@drawable/resume"
-        android:title="My Resume"/>
+        android:id="@+id/wishlist"
+        android:icon="@drawable/heart"
+        android:title="Wishlist"/>
+
+    <item
+        android:id="@+id/recommend_jobs"
+        android:icon="@drawable/education_logo"
+        android:title="Recommend Jobs"/>
+
     <item
         android:id="@+id/notification"
         android:icon="@drawable/notification"
         android:title="Notification"/>
-    <item
-        android:id="@+id/wishlist"
-        android:icon="@drawable/wishlist"
-        android:title="Wishlist"/>
 
     <item
-        android:id="@+id/help"
-        android:icon="@drawable/help"
-        android:title="Help"/>
+        android:id="@+id/refer"
+        android:icon="@drawable/share_icon"
+        android:title="Refer &amp; Earn"/>
     <item
         android:id="@+id/wallet"
         android:icon="@drawable/wallet"
         android:title="Wallet"/>
 
+
     <item
-        android:id="@+id/terms_and_services"
-        android:icon="@drawable/terms_and_condition"
-        android:title="Terms and Services"/>
-    <item
-        android:id="@+id/writeToUse"
-        android:icon="@drawable/terms_and_condition"
-        android:title="Write To Use"/>
+        android:id="@+id/message"
+        android:icon="@drawable/message"
+        android:title="Message"/>
     <item
         android:id="@+id/settings"
         android:icon="@drawable/settings"
         android:title="Settings"/>
 
     <item
+        android:id="@+id/writeToUse"
+        android:icon="@drawable/terms_and_condition"
+        android:title="Write To Use"/>
+    <item
         android:id="@+id/about_us"
-        android:icon="@drawable/settings"
+        android:icon="@drawable/about_us"
         android:title="About Us"/>
     <item
         android:id="@+id/logout"

@@ -21,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 finally {
-                    Intent intent = new Intent(SplashActivity.this , SeekingJobActivity.class);
+                    Intent intent = new Intent(SplashActivity.this , CareerStartPageActivity.class);
                     startActivity(intent);
                     finish();
                 }

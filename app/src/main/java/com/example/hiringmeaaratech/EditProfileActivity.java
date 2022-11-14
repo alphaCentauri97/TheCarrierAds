@@ -29,7 +29,7 @@ public class EditProfileActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewpager);
         backArrow = findViewById(R.id.back_arrow);
         editbtn = findViewById(R.id.editbtn);
-        imgProfessionalDetail = findViewById(R.id.imgPersonalEdit);
+
 
         viewPager.setAdapter(new EditProfileFragmentAdapter(this));
         new TabLayoutMediator(tabLayout,viewPager,((tab, position) ->tab.setText(titles[position]) )).attach();
@@ -48,13 +48,7 @@ public class EditProfileActivity extends AppCompatActivity {
             }
         });
 
-        imgProfessionalDetail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(EditProfileActivity.this, SkillActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
 
 

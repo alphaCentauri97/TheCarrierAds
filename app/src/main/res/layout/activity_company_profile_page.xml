@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".CompanyProfilePage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/left_arrow" />
+
+
+
+    </LinearLayout>
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,43 +41,48 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:padding="4dp">
+                android:layout_marginTop="5dp">
 
                 <ImageView
-                    android:id="@+id/left_arrow"
+                    android:id="@+id/imgCompanyLogo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="152dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.5" />
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/company_logo" />
 
                 <TextView
-                    android:id="@+id/tvdays"
+                    android:id="@+id/tvPostedDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins"
-                    android:text="8 days ago"
-                    android:textSize="12sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="41dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="256 days ago"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imgCompanyLogo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.4" />
+
+                <ImageView
+                    android:id="@+id/imgSave"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="16dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.925"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
+                    app:layout_constraintHorizontal_bias="0.836"
+                    app:layout_constraintStart_toEndOf="@+id/imgCompanyLogo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.304"
+                    app:srcCompat="@drawable/save_wihout_fill" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                app:srcCompat="@drawable/company_logo" />
 
             <TextView
                 android:id="@+id/tvCompanyName"
@@ -72,7 +96,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvCategory"
+                android:id="@+id/tvTechnology"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -82,32 +106,33 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/tvDate"
+                android:id="@+id/tvlocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:drawableLeft="@drawable/access_time"
+                android:layout_marginHorizontal="30dp"
                 android:drawablePadding="4dp"
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
-                android:text="Apply By 30 Oct' 22"
+                android:text="Indira Nagar Near Shekhar hospital, Lucknow"
                 android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
+                android:layout_marginHorizontal="14dp"
                 android:layout_marginTop="24dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/button_bg"
-                    android:backgroundTint="#CBEEF4"
+                    android:elevation="2dp"
+                    android:background="@drawable/gradient_color"
                     android:orientation="vertical"
                     android:paddingVertical="8dp">
 
@@ -115,29 +140,28 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Location"
                         android:fontFamily="@font/poppins_semibold"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
+                        android:text="Posted By"
+                        android:textColor="@color/white"/>
 
                     <TextView
-                        android:id="@+id/tvlocation"
+                        android:id="@+id/tvPostedBy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="3dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Kharagpur"
-                        android:textColor="@color/black" />
+                        android:text="Ravi Kumar"
+                        android:textColor="@color/white" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginHorizontal="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/button_bg"
-                    android:backgroundTint="#CBEEF4"
+                    android:elevation="2dp"
+                    android:background="@drawable/gradient_color"
                     android:orientation="vertical"
                     android:paddingVertical="8dp">
 
@@ -145,9 +169,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Job Type"
-                        android:textColor="@color/black"
                         android:fontFamily="@font/poppins_semibold"
+                        android:text="Job Type"
+                        android:textColor="@color/white"
                         android:textStyle="bold" />
 
                     <TextView
@@ -158,16 +182,17 @@
                         android:layout_marginTop="3dp"
                         android:fontFamily="@font/poppins"
                         android:text="Internship"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/white" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/button_bg"
-                    android:backgroundTint="#CBEEF4"
+                    android:elevation="2dp"
+                    android:background="@drawable/gradient_color"
                     android:orientation="vertical"
                     android:paddingVertical="8dp">
 
@@ -175,9 +200,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Salaries"
-                        android:textColor="@color/black"
                         android:fontFamily="@font/poppins_semibold"
+                        android:text="Salaries"
+                        android:textColor="@color/white"
                         android:textStyle="bold" />
 
                     <TextView
@@ -186,84 +211,136 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="3dp"
+                        android:paddingHorizontal="2dp"
                         android:fontFamily="@font/poppins"
-                        android:text="12-15K"
-                        android:textColor="@color/black" />
+                        android:text="20000-50000"
+                        android:textColor="@color/white" />
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="30dp"
+                android:elevation="2dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingVertical="2dp"
+                android:text="Job Description"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="33dp"
-                android:orientation="horizontal">
+                android:layout_marginHorizontal="6dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/background_color"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="2dp">
+
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/tvDescription"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/gradient_color"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:gravity="center"
-                    android:paddingVertical="2dp"
-                    android:text="Job Description"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"
                     android:fontFamily="@font/poppins"
-                    android:gravity="center"
-                    android:paddingVertical="2dp"
-                    android:text="Company"
-                    android:textSize="16sp" />
+                    android:paddingHorizontal="14dp"
+                    android:paddingVertical="4dp"
+                    android:text="This is php job for all file candidature must have good knowledge have framework" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:elevation="2dp"
+                android:paddingVertical="2dp"
+                android:text="Skills Required"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/background_color"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="20dp">
+
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/tvSkills"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"
                     android:fontFamily="@font/poppins"
-                    android:gravity="center"
-                    android:paddingVertical="2dp"
-                    android:text="Review"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <androidx.recyclerview.widget.RecyclerView
+                    android:paddingHorizontal="7dp"
+                    android:paddingVertical="4dp"
+                    android:text="C Language,Java, Node Js, Angular Js "
+                    />
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginVertical="20dp" />
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="bottom">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:layout_marginLeft="38dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/share_icon"
+                        android:gravity="center"
+                        android:drawablePadding="-40dp"
+                        android:paddingRight="20dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="@color/drawable_bg"
+                        android:elevation="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:minHeight="37dp"
+                        android:text="Share" />
+
+                    <Button
+                        android:id="@+id/btnApplyNow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="38dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_color"
+                        android:elevation="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:minHeight="37dp"
+                        android:text="Apply Now"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </RelativeLayout>
 
 
         </LinearLayout>
 
+
     </androidx.core.widget.NestedScrollView>
 
-    <Button
-        android:id="@+id/applyButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/gradient_color"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Apply"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
 
-</RelativeLayout>
+</LinearLayout>

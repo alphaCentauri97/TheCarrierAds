@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.hiringmeaaratech.JobEmployer.HomeActivity;
 import com.example.hiringmeaaratech.databinding.ActivityCareerStartPageBinding;
 
 import java.util.ArrayList;
@@ -40,6 +41,7 @@ public class CareerStartPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CareerStartPageActivity.this , SeekingJobActivity.class);
+                intent.putExtra("num",1);
                 startActivity(intent);
                 finish();
             }
@@ -47,7 +49,8 @@ public class CareerStartPageActivity extends AppCompatActivity {
         binding.iWantHire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CareerStartPageActivity.this , SeekingJobActivity.class);
+                Intent intent = new Intent(CareerStartPageActivity.this , HomeActivity.class);
+                intent.putExtra("num",2);
                 startActivity(intent);
                 finish();
             }

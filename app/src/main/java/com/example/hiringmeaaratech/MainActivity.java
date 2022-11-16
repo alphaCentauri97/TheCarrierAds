@@ -23,6 +23,7 @@ import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.hiringmeaaratech.Fragments.HomeFragment;
+import com.example.hiringmeaaratech.JobEmployer.HomeActivity;
 import com.example.hiringmeaaratech.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 
@@ -85,9 +86,6 @@ public class MainActivity extends AppCompatActivity {
                         intent = new Intent(MainActivity.this, ReferActivity.class);
                         startActivity(intent);
                         break;
-
-
-
                     case R.id.message:
                         intent = new Intent(MainActivity.this, ChatUiActivity.class);
                         startActivity(intent);
@@ -98,6 +96,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.wishlist:
                         intent = new Intent(MainActivity.this, SavedJobsActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.logout:
+                        intent = new Intent(MainActivity.this, CareerStartPageActivity.class);
                         startActivity(intent);
                         break;
 
@@ -139,7 +141,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return super .onOptionsItemSelected(item) ;
     }
-
-
 
 }

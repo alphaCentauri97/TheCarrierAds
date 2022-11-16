@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobEmployer.EditEmployerProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Employer Profile"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/company_logo"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="27dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+        app:srcCompat="@drawable/camera" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/spinner_bg"
+                android:backgroundTint="@color/background_color"
+                android:elevation="2dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Company Name"
+                android:inputType="textPersonName"
+                android:minHeight="45dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/spinner_bg"
+                android:backgroundTint="@color/background_color"
+                android:elevation="2dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:minHeight="45dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/spinner_bg"
+                android:ems="10"
+                android:backgroundTint="@color/background_color"
+                android:elevation="2dp"
+                android:fontFamily="@font/poppins"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:minHeight="45dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etJobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/spinner_bg"
+                android:ems="10"
+                android:backgroundTint="@color/background_color"
+                android:elevation="2dp"
+                android:fontFamily="@font/poppins"
+                android:hint="Location"
+                android:inputType="textPostalAddress"
+                android:minHeight="45dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/poppins"
+                android:text="Add at least one Document"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnCompanyRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/spinner_bg"
+                android:backgroundTint="@color/background_color"
+                android:elevation="2dp"
+                android:drawableRight="@drawable/file_upload_24"
+                android:fontFamily="@font/poppins"
+                android:gravity="left|center"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="12dp"
+                android:text="Upload Detail"
+                android:textAppearance="@style/customfontstyle"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="Ex: Company Registration"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/btnGstRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/spinner_bg"
+                android:backgroundTint="@color/background_color"
+                android:elevation="2dp"
+                android:drawableRight="@drawable/file_upload_24"
+                android:fontFamily="@font/poppins"
+                android:gravity="left|center"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="12dp"
+                android:text="Upload Detail"
+                android:textAppearance="@style/customfontstyle"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="Ex: GST Registration"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/btOtherDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/spinner_bg"
+                android:backgroundTint="@color/background_color"
+                android:elevation="2dp"
+                android:drawableRight="@drawable/file_upload_24"
+                android:fontFamily="@font/poppins"
+                android:gravity="left|center"
+                android:minHeight="39dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="12dp"
+                android:text="Upload Detail"
+                android:textAppearance="@style/customfontstyle"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="Other Document"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/gradient_color"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
